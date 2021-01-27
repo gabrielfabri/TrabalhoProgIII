@@ -4,44 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
+
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
     <header id="cabeçalho">
         <hgroup>
-            <h1>Reserva Certa</h1>
-            <h2>Sua melhor experiência em resrevas de hotéis está chegando...  </h2>
+            <div class="txtIni2">
+            <h1>
+            Reserva Certa
+            </h1>
+            </div>
+            <div>
+                <h3 class="txtCad2 txtSlogan2">Sua melhor experiência em reserva de hotéis está chegando...
+                </h3>
+            </div>
             <hr>
         </hgroup>
     </header>
 
     <header id="cabeçalho-artigo">
         <hgroup>
-            <h3>Fale conosco > Contato</h3>
-            <h1>Formulário de Contato</h1>
-            <h5>Por: Compra Certa</h5>
+            <div class="txtIni2">
+            <h4>Fale conosco > Contato</h4>
+            <h2>Formulário de Contato</h2>
+            <h6>Por: Compra Certa</h6>
+        </div>
             <hr>
         </hgroup>
     </header>
     <forms>
     <fieldset id="usuário"><legend>Identificação de Usuário:</legend>
-        <p><label for="cNome">Nome:</label><input type="text" nome="tNome"  id="cNome" size="20" maxlength="30" placeholder="Digite seu nome..."/></p>
-        <p><label for="cEmail">E-mail:</label><input type="email" nome="tEmail" id="cEmail" size="30" maxlength="50" placeholder="Digite seu email..."/></p>
-        <p><label for="cTel">Telefone:</label><input type="tel" nome="tTel" id="cTel" size="15" maxlength="15" placeholder="Insira seu telefone"/></p>
+        
+        <div>
+            <form method="POST" action="">
+              <div class="divInput">
+                <span class="txtNameInput">Nome Completo:</span>
+                <input type="text" name="nome" placeholder="Digite seu nome completo" class="txtEntradas2">
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">E-mail:</span>
+                  <input type="text" name="e-mail" placeholder="Digite seu e-mail" class="txtEntradas2">
+              </div>
+              <div  class="divInput">
+                  <span class="txtNameInput">Telefone:</span>
+                  <input type="int" name="Telefone"placeholder="Insira seu telefone" class="txtEntradas2">
+              </div>
     </fieldset>
     
     <fieldset id="conheceu-site"><legend>Como conheceu o site:</legend>
-        <p><input type="radio" name="tEscolha" id="cOpcao1"/> <label for="cOpcao1">Através de amigos;</label></p>
-        <p><input type="radio" name="tEscolha" id="cOpcao2"/> <label for="cOpcao2">Redes sociais;</label></p>
-        <p><input type="radio" name="tEscolha" id="cOpcao3"/> <label for="cOpcao3">Busca na Web;</label></p>
-        <p><input type="radio" name="tEscolha" id="cOpcao4"/> <label for="cOpcao4">Indicação de Agência de viagens</label>;</p>
-        <p><label for="cOpcao5">Outros:</label><input type="text" name="tEscolha" id="cOpcao5"/></p>
-    </fieldset>
+        <div class="txtTermos2">
+            <input type="checkbox" class="checkbox" name="Amigos">
+            <label for="Amigos">Através de amigos</label>
+          </div>
+          <div class="txtTermos2">
+            <input type="checkbox" class="checkbox" name="Redes Sociais">
+            <label for="Redes Sociais">Redes Sociais</label>
+          </div>
+          <div class="txtTermos2">
+            <input type="checkbox" class="checkbox" name="Busca na Web">
+            <label for="Busca na Web">Buscas na Web</label>
+          </div>
+          <div class="txtTermos2">
+            <input type="checkbox" class="checkbox" name="indicação">
+            <label for="indicação">Indicações de Agências de</label>
+          </div>
+
+        <div  class="divInput">
+         <span class="txtNameInput"> Outros:</span>
+            <input type="text" name="Outros" placeholder="Escreva aqui..." class="txtEntradas2">
+        </div>
 
     <fieldset id="informacao"><legend>Escreva sua mensagem:</legend>
-        <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite sua mensagem..."></textarea></p>
+        <div class="divInput">
+            <span class="txtNameInput">Mensagem:</span>
+            <input type="text" name="Mensagem" placeholder="Digite sua Mensagem..." class="txtEntradas2">
+          </div>
     </fieldset>
 
-    <p><button>Enviar</button></p>
+    <div>
+        <input type="submit" class="btnCadastrar" value="Enviar" ></a>
+      </div>
 </forms>
 
 </body>
