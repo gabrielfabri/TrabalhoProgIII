@@ -100,7 +100,7 @@ body{
     cursor: pointer;
   }
   .btnConectar{
-    margin-left: 190px;
+    margin-left: 200px;
     background-color: #0b467d;
     font-family: sans-serif;
     font-size: 20px;
@@ -110,13 +110,13 @@ body{
   }
   .txtConectar{
     margin-top: 10px;
-    margin-left: 160px;
+    margin-left: 150px;
     font-size: 22px;
     font-family: sans-serif;
   }
 
   .btnEsqueceuSenha{
-    margin-left: 160px;
+    margin-left: 180px;
     background-color: #c6c6c6;
     font-family: sans-serif;
     font-size: 15px;
@@ -131,7 +131,7 @@ body{
     width: 250px;
     height: 30px;
     margin-top: 10px;
-    margin-left: 55px;
+    margin-left: 130px;
     background-color: #0b467d;
     font-family: sans-serif;
     font-size: 22px;
