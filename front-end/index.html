@@ -15,31 +15,31 @@
     <section>
         <div class="filterPanel">
             <div class="titleFilter">
-                <h2>Para onde vai?</h2>
+                <span>Para onde vai?</span>
             </div>
             <div class="filter">
-                <span>Destino</span>
-                <input type="text" name="" id="" placeholder="Digite o nome do destino">
+                <span class="textInputFilter">Destino</span>
+                <input type="text" name="" class="inputFilter" placeholder="Digite o nome do destino">
             </div>
             <div class="filter">
-                <span>check in</span>
-                <input type="date" name="" id="">
+                <span class="textInputFilter">Check-in</span>
+                <input type="date" name="" class="inputFilter">
             </div>
             <div class="filter">
-                <span>check out</span>
-                <input type="date" name="" id="">
+                <span class="textInputFilter">Checkout</span>
+                <input type="date" name="" class="inputFilter">
             </div>
             <div class="filter">
-                <span>Adultos</span>
-                <input type="number" name="" id="" placeholder="Quantidade de Adultos">
+                <span class="textInputFilter">Adultos</span>
+                <input type="number" name="" class="inputFilter" placeholder="Quantidade de Adultos">
             </div>
             <div class="filter">
-                <span>Crianças até 3 anos</span>
-                <input type="number" name="" id="" placeholder="Quantidade de Crianças até 3 anos">
+                <span class="textInputFilter">Crianças até 3 anos</span>
+                <input type="number" name="" class="inputFilter" placeholder="Quantidade de Crianças até 3 anos">
             </div>
             <div class="filter">
-                <span>Crianças de 4 à 12 anos</span>
-                <input type="number" name="" id="" placeholder="Quantidade de Crianças de 4 à 12 anos">
+                <span class="textInputFilter">Crianças de 4 à 12 anos</span>
+                <input type="number" name="" class="inputFilter" placeholder="Quantidade de Crianças de 4 à 12 anos">
             </div>
             <div class="buttonDiv">
                 <button>
@@ -47,7 +47,11 @@
                 </button>
             </div>
         </div>
+       
         <div class="listPanel">
+            <!-- <div class="containerOrderBy">
+                <h1>teste</h1>
+            </div> -->
             <table style="width:100%;">
                 <tr class="tableRow">
                     <td class="containerList">
@@ -55,9 +59,15 @@
                             <img src="../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
-                            <span>Classificação</span>
-                            <span>Breve descrição</span>
-                            <span>R$100/noite</span>
+                            <div>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                            </div>
+                            <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
+                            <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
                         </div>
                     </td>
                     <td class="containerList">
@@ -65,9 +75,15 @@
                             <img src="../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
-                            <span>Classificação</span>
-                            <span>Breve descrição</span>
-                            <span>R$100/noite</span>
+                            <div>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                            </div>
+                            <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
+                            <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
                         </div>
                     </td>
                     <td class="containerList">
@@ -75,9 +91,15 @@
                             <img src="../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
-                            <span>Classificação</span>
-                            <span>Breve descrição</span>
-                            <span>R$100/noite</span>
+                            <div>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                            </div>
+                            <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
+                            <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
                         </div>
                     </td>
                 </tr>
@@ -87,9 +109,15 @@
                             <img src="../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
-                            <span>Classificação</span>
-                            <span>Breve descrição</span>
-                            <span>R$100/noite</span>
+                            <div>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                            </div>
+                            <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
+                            <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
                         </div>
                     </td>
                     <td class="containerList">
@@ -97,9 +125,15 @@
                             <img src="../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
-                            <span>Classificação</span>
-                            <span>Breve descrição</span>
-                            <span>R$100/noite</span>
+                            <div>
+                                <span class="starsHotel">&#9734;</span>
+                                <span class="starsHotel">&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                            </div>
+                            <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
+                            <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
                         </div>
                     </td>
                     <td class="containerList">
@@ -107,9 +141,15 @@
                             <img src="../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
-                            <span>Classificação</span>
-                            <span>Breve descrição</span>
-                            <span>R$100/noite</span>
+                            <div>
+                                <span class="starsHotel">&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                                <span style='font-size:25px;'>&#9734;</span>
+                            </div>
+                            <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
+                            <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
                         </div>
                     </td>
                 </tr>
