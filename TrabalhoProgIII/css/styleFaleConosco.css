@@ -1,0 +1,230 @@
+  /*.bg-photo{
+    background-color: #c9c9c9;
+    background-image: url('../imagens/pexels-pixabay-277572.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 115%;
+  } */
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: auto;
+  }
+
+  body{
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;  
+  }
+  input:hover{
+    border: 2px solid #5f5f5f;
+  }
+
+  .main-panel{
+    position: relative;
+    width:  400px;
+    min-height: 425px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-color: #d9d9d98c;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #101010b3;
+  }
+
+  .sec-panel{
+    position: relative;
+    text-align: center;
+    width: 400px;
+    min-height: 110px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-color: #d9d9d98c;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: #101010b3;
+  }
+
+  .entradas-panel{
+      margin-top: 10%;
+      text-align: left;
+  }
+
+  .txtIni{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .txtRegister{
+      margin-top: 10px;
+  }
+  .txtCad{
+   /* margin-left: 10px;*/
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+  .txtSlogan{
+    text-align: center;
+    margin-bottom: 35px;
+    color: #fff;
+  }
+  .txtEntradas{
+    margin-top: 2px;
+    padding-left: 10px;
+    width: 300px;
+    height: 25px;
+    border-width: 2px;
+    border-color: #bfbfbf;
+    color:#fff;
+    background-color: #fff;
+  }
+
+  .btnCadastrar{
+    width: 380px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #0b467d;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #e6e6e6;
+    cursor: pointer;
+  }
+  .btnConectar{
+    background-color: #0b467d;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #e6e6e6;
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .txtConectar{
+    margin-top: 15px;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  .btnEsqueceuSenha{
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #000;
+    border-width: 0px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 2px 3px 2px;
+    color: #fff;
+  }
+  .btnLogar{
+    width: 250px;
+    height: 30px;
+    margin-top: 40px;
+    background-color: #0b467d;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #e6e6e6;
+    border-width: 0px;
+    cursor: pointer;
+  }
+  .txtLogin{
+    margin-bottom: 40px;
+  }
+
+  .txtTermos2{
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 15px;
+    text-align: left;
+    color: #000;
+  }
+  
+  .txtEntradas2{
+    margin-top: 2px;
+    margin-left: 4px;
+    padding-left: 10px;
+    width: 200px;
+    height: 25px;
+    border-width: 2px;
+    border-color: #bfbfbf;
+    color: black;
+    background-color: #fbfbfb73;
+  }
+
+  .btnEsqueceuSenha2{
+    margin-left: 160px;
+    background-color: #c6c6c6;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #000;
+    border-width: 0px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 2px 3px 2px;
+  }
+
+  .txtSlogan2{
+    margin-bottom: 45px;
+  }
+
+  .txtCad2{
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+
+  .txtIni2{
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .borda_texto{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 3em; color: #000;
+  }
+
+  #iconComments{
+    color: #fff;
+  }
+
+  .txtIni3{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .txtQuadros{
+      text-align: left;
+      color: #e6e6e6;
+  }
+
+  .txtInput{
+    text-align: left;
+    margin-bottom: 35px;
+    color: #fff;
+  }
+  .btnCadastrar2{
+    width: 380px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #0b467d;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #e6e6e6;
+    cursor: pointer;
+    margin-left: 10px;
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Certa - Cadastro</title>
+
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/styleRegister.css"/>
+  </head>
+  <body class="bg-photo">
+    <video autoplay muted loop id="myVideo">
+      <source src="../imagens/bg-video.mp4" type="video/mp4">
+    </video>
+    <main>
+      <section class="register-panel">
+        <header>
+          <div class="txtIni txtRegister">
+            <h1>
+                Reserva Certa
+            </h1>
+          </div>
+          <div class="txtCad txtSlogan">
+            <h3>Cadastre-se para realizar sua reserva.</h3>
+          </div>
+        </header>
+        <div class="containerInputs">
+          <form method="POST" action="">
+            <div class="ContainerInputsColumn">
+              <div class="divInput marginNone">
+                <span class="txtNameInput">Nome Completo</span><br>
+                <div class="inputCenter">
+                  <input type="text" name="nome" placeholder="Nome completo" class="inputsRegister">
+                </div>
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">CPF</span><br>
+                  <div class="inputCenter">
+                    <input type="text" name="cpf" placeholder="CPF" class="inputsRegister">
+                  </div>
+              </div>
+              <div  class="divInput">
+                  <span class="txtNameInput">Data de Nascimento</span><br>
+                  <input type="date" name="dtNasc" class="inputsRegister inputDate">
+              </div>
+              <div class="divInput">
+                <span class="txtNameInput">Sexo</span><br>
+                <select name="sexo" class="inputsRegister select" placeholder="Sexo">
+                    <option value="null">Sexo</option>
+                    <option value="masc">Masculino</option>
+                    <option value="fem" >Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">Estado Civil</span><br>
+                  <select name="estadoCivil" class="inputsRegister select" placeholder="Estado Civil">
+                      <option value="null">Estado Civil</option>
+                      <option value="solteiro">Solteiro</option>
+                      <option value="casado">Casado</option>
+                      <option value="divorciado" >Divorciado</option>
+                      <option value="viuvo">Viúvo</option>
+                  </select>
+              </div>
+              <div class="divInput">
+                <span class="txtNameInput">Cidade</span><br>
+                <input type="text" name="cidade" placeholder="Cidade" class="inputsRegister">
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">Estado</span><br>
+                  <input type="text" name="estado" placeholder="Estado" class="inputsRegister">
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">CEP</span><br>
+                  <input type="number" name="cep" placeholder="CEP" class="inputsRegister">
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">Email</span><br>
+                  <input type="email"  name="email" placeholder="Número de Celular ou e-mail" class="inputsRegister">
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">Senha</span><br>
+                  <input type="password" name="senha" class="inputsRegister" placeholder="Senha">
+              </div>
+              <div class="divInput">
+                  <span class="txtNameInput">Confirmação de Senha</span><br>
+                  <input type="password" name="senha" class="inputsRegister" placeholder="Confirmação de Senha">
+              </div>
+            </div>
+            <div class="txtTermos">
+              <input type="checkbox" class="checkbox" name="concordo">
+              <label for="concordo">Concordo com os termos,
+                Política de Dados e Política de Cookies.</label>
+            </div>
+            <div class="ContainerButtonCad">
+              <input type="submit" class="btnCadastrar" value="Cadastre-se" ></a>
+            </div>
+          </form>
+        </div>
+
+      </section>
+      <footer class="sec-panel">
+         <h1 class="txtConectar">Já tem uma conta?</h1>
+         <a href="sign_in.html"><input type="submit" class="btnConectar" value="Conecte-se" ></a>
+      </footer>
+    </main>
+  </body>
+</html>
