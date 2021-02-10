@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
+    <link rel="stylesheet" href="../css/styleFaleConosco.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="../css/style.css"/>
 </head>
-    <body class="bg-photo">
+    <body>
+      <video autoplay muted loop id="myVideo">
+        <source src="../imagens/bg-video.mp4" type="video/mp4">
+    </video>
     <main>
     <section class="main-panel register-panel">
     <header>
@@ -30,26 +34,25 @@
             <div class="txtCad txtSlogan">
             <h4>Fale conosco</h4>
             <h3>Formulário de Contato</h3>
-            <!--<h6>Por, Reserva Certa.</h6>-->
-        </div>
-           <!-- <hr>-->
-        </hgroup>
+        </div>        
+    </hgroup>
     </header>
+    <div class="txtCad">
     <forms>
     <fieldset id="usuário"><legend>Identificação de Usuário:</legend>
         
         <div>
             <form method="POST" action="">
-              <div class="divInput">
-                <span class="txtNameInput">Nome Completo:</span>
+              <div class="txtTermos2">
+                <span class="txtSlogan">Nome Completo:</span>
                 <input type="text" name="nome" placeholder="Digite seu nome completo" class="txtEntradas">
               </div>
-              <div class="divInput">
-                  <span class="txtNameInput">E-mail:</span>
+              <div class="txtTermos2">
+                  <span class="txtSlogan">E-mail:</span>
                   <input type="text" name="e-mail" placeholder="Digite seu e-mail" class="txtEntradas">
               </div>
-              <div  class="divInput">
-                  <span class="txtNameInput">Telefone:</span>
+              <div  class="txtTermos2">
+                  <span class="txtSlogan">Telefone:</span>
                   <input type="int" name="Telefone"placeholder="Insira seu telefone" class="txtEntradas">
               </div>
     </fieldset>
@@ -57,38 +60,39 @@
     <fieldset id="conheceu-site"><legend>Como conheceu o site:</legend>
         <div class="txtTermos2">
             <input type="radio" class="checkbox" name="escolha" id="opcao1">
-            <label for="opcao1">Através de amigos</label>
+            <label for="opcao1" class="txtSlogan">Através de amigos</label>
           </div>
           <div class="txtTermos2">
             <input type="radio" class="checkbox" name="escolha" id="opcao2">
-            <label for="opcao2">Redes Sociais</label>
+            <label for="opcao2" class="txtSlogan">Redes Sociais</label>
           </div>
           <div class="txtTermos2">
             <input type="radio" class="checkbox" name="escolha" id="opcao3">
-            <label for="opcao3">Buscas na Web</label>
+            <label for="opcao3" class="txtSlogan">Buscas na Web</label>
           </div>
           <div class="txtTermos2">
             <input type="radio" class="checkbox" name="escolha" id="opcao4">
-            <label for="opcao4">Indicações de Agências de Viagens</label>
+            <label for="opcao4" class="txtSlogan">Indicações de Agências de Viagens</label>
           </div>
 
         <div  class="divInput">
-         <span class="txtTermos2"> <label for="opcao5" >Outros:</label></span>
+         <span class="txtTermos2"> <label for="opcao5" class="txtSlogan">Outros:</label></span>
             <input type="text" name="escolha" id="opcao5" placeholder="Escreva aqui..." class="txtTermos2">
         </div>
     </fieldset>
 
     <fieldset id="informacao"><legend>Escreva sua mensagem:</legend>
-        <div class="divInput">
-            <span class="txtNameInput">Mensagem:</span>
-            <textarea name="tMsg" id="cMsg" cols="45" rows="2" placeholder="Digite sua mensagem..." class="txtTermos2"></textarea>
+        <div class="txtTermos2">
+            <span class="txtSlogan">Mensagem:</span>
+            <textarea name="tMsg" id="cMsg" cols="32" rows="3" placeholder="Digite sua mensagem..." class="txtEntradas"></textarea>
           </div>
     </fieldset>
 
     <div>
-        <input type="submit" class="btnCadastrar" value="Enviar" ></a>
+        <input type="submit" class="btnCadastrar2" value="Enviar" ></a>
       </div>
 </forms>
+        </div>
         </section>
         </main>
     </body>
