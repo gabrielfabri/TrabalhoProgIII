@@ -1,56 +1,65 @@
-body{
-    background-color: #f2f2f2;
-    font-family: 'Roboto', sans-serif;
-  
+  /* .bg-photo{
+    background-color: #c9c9c9;
+    background-image: url('../imagens/pexels-pixabay-277572.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 115%;
+  } */
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: auto;
+  }
+
+  body{
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;  
   }
   input:hover{
     border: 2px solid #5f5f5f;
   }
 
   .main-panel{
-    width:  500px;
+    position: relative;
+    width:  400px;
     min-height: 425px;
     margin: 0 auto;
     margin-top: 30px;
     border-color: #d9d9d98c;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: #101010b3;
   }
 
   .sec-panel{
-    width: 500px;
-    min-height: 100px;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    min-height: 110px;
     margin: 0 auto;
     margin-top: 20px;
     border-color: #d9d9d98c;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #101010b3;
   }
 
   .entradas-panel{
       margin-top: 10%;
+      text-align: center;
   }
 
-  .register-panel{
-      margin-top: 10px;
-
-  }
-  
-  .bg-photo{
-    background-color: #c9c9c9;
-    background-image: url('../imagens/bg1.jpg');
-    background-repeat: repeat-y;
-    background-size: cover;
-  }
   .txtIni{
-    margin-left: 140px;
+    text-align: center;
     font-family: 'Heebo', sans-serif;
     font-size: 25px;
     margin-bottom: 20px;
+    color: #fff;
   }
   .txtRegister{
       margin-top: 10px;
@@ -63,34 +72,23 @@ body{
   .txtSlogan{
     text-align: center;
     margin-bottom: 35px;
+    color: #fff;
   }
   .txtEntradas{
     margin-top: 2px;
-    margin-left: 45px;
     padding-left: 10px;
-    width: 400px;
+    width: 300px;
     height: 25px;
     border-width: 2px;
     border-color: #bfbfbf;
     color: black;
-    background-color: #fbfbfb73;
+    background-color: #fff;
   }
-  .divInput{
-      margin-top: 10px;
-  }
-  .txtNameInput{
-      margin-left: 45px;
-  }
-  .select{
-      width: 415px;
-      height: 30px;
-      border-color: #c6c6c6;
-  }
+
   .btnCadastrar{
     width: 380px;
     height: 30px;
     margin-top: 15px;
-    margin-left: 60px;
     margin-bottom: 25px;
     background-color: #0b467d;
     font-family: sans-serif;
@@ -100,38 +98,38 @@ body{
     cursor: pointer;
   }
   .btnConectar{
-    margin-left: 200px;
     background-color: #0b467d;
     font-family: sans-serif;
     font-size: 20px;
     color: #e6e6e6;
     border-width: 0px;
+    border-radius: 5px;
     cursor: pointer;
+    padding: 10px;
   }
   .txtConectar{
-    margin-top: 10px;
-    margin-left: 150px;
+    margin-top: 15px;
     font-size: 22px;
     font-family: sans-serif;
+    color: #fff;
   }
 
   .btnEsqueceuSenha{
-    margin-left: 180px;
-    background-color: #c6c6c6;
+    background-color: transparent;
     font-family: sans-serif;
     font-size: 15px;
     color: #000;
     border-width: 0px;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 10px;
     padding: 2px 3px 2px;
+    color: #fff;
   }
   .btnLogar{
     width: 250px;
     height: 30px;
-    margin-top: 10px;
-    margin-left: 130px;
+    margin-top: 40px;
     background-color: #0b467d;
     font-family: sans-serif;
     font-size: 22px;
@@ -143,18 +141,10 @@ body{
     margin-bottom: 40px;
   }
 
-  .txtTermos{
-    margin-top: 20px;
-    font-size: 16px;
-    margin-left: 15px;
-    text-align: center;
-  }
-
   .txtTermos2{
     margin-top: 20px;
     font-size: 16px;
     margin-left: 15px;
-  
   }
   
   .txtEntradas2{
@@ -177,8 +167,8 @@ body{
     color: #000;
     border-width: 0px;
     cursor: pointer;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     padding: 2px 3px 2px;
   }
 
@@ -202,230 +192,7 @@ body{
     -webkit-text-stroke-color: #000;
     font-size: 3em; color: #fffdd9;
   }
-  /* @media screen and (min-width: 320px){
-    .main-panel{
-      width: 300px;
-      margin-top: 10px;
-    }
-    .txtIni{
-      margin-left: 50px;
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
-    .txtCad{
-      font-size: 14px;
-    }
-    .txtEntradas{
-      width: 250px;
-      margin-left: 18px;
-      margin-top: 5px;
-    }
-    .txtTermos{
-      margin-top: 15px;
-      margin-bottom: 15px;
-      margin-left: 25px;
-    }
-    .btnCadastrar{
-      width: 220px;
-      margin-left: 40px;
-      margin-bottom: 15px;
-    }
-    .sec-panel{
-      width: 300px;
-      min-height: 90px;
-    }
-    .txtConectar{
-      font-size: 18px;
-      margin-left: 70px;
-    }
-    .btnConectar{
-      margin-left: 90px;
-    }
-    .btnEsqueceuSenha{
-      margin-left: 70px;
-      font-size: 15px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    .btnLogar{
-      width: 180px;
-      height: 30px;
-      margin-top: 25px;
-      margin-left: 60px;
-      font-size: 18px;
-    }
-    .txtLogin{
-      margin-bottom: 35px;
-    }
+
+  #iconComments{
+    color: #fff;
   }
-  
-  @media screen and (min-width: 360px){
-    .main-panel{
-      margin-top: 25px;
-    }
-    .txtIni{
-      margin-left: 40px;
-      margin-bottom: 25px;
-      font-size: 25px;
-    }
-    .txtCad{
-      font-size: 15px;
-    }
-    .sec-panel{
-      min-height: 80px;
-    }
-  }
-  
-  @media screen and (min-width: 414px){
-    .main-panel{
-      width: 360px;
-      margin-top: 20px;
-    }
-    .txtIni{
-      margin-left: 60px;
-      font-size: 25px;
-    }
-    .txtCad{
-      font-size: 16px;
-    }
-    .txtEntradas{
-      width: 310px;
-    }
-    .txtTermos{
-      font-size: 14px;
-      margin-top: 15px;
-    }
-    .btnCadastrar{
-      width: 260px;
-      margin-left: 50px;
-      margin-bottom: 12px;
-    }
-    .sec-panel{
-      width: 360px;
-      min-height: 80px;
-    }
-    .txtConectar{
-      font-size: 18px;
-      margin-left: 105px;
-    }
-    .btnConectar{
-      margin-left: 125px;
-    }
-    .btnEsqueceuSenha{
-      margin-left: 90px;
-      font-size: 16px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    .btnLogar{
-      width: 210px;
-      margin-top: 25px;
-      margin-left: 70px;
-      font-size: 19px;
-    }
-    .txtLogin{
-      margin-bottom: 35px;
-    }
-  }
-  
-  @media screen and (min-width: 768px){
-    .main-panel{
-      width: 400px;
-      margin-top: 15px;
-    }
-    .txtIni{
-      margin-left: 80px;
-      margin-bottom: 30px;
-      font-size: 26px;
-    }
-    .txtCad{
-      font-size: 16px;
-    }
-    .txtEntradas{
-      width: 310px;
-      margin-left: 35px;
-   }
-    .txtTermos{
-      margin-top: 15px;
-      margin-left: 45px;
-    }
-    .btnCadastrar{
-      width: 250px;
-      margin-left: 70px;
-      margin-bottom: 15px;
-    }
-    .sec-panel{
-      width: 400px;
-      min-height: 85px;
-    }
-    .txtConectar{
-      margin-top: 8px;
-      font-size: 20px;
-      margin-left: 110px;
-    }
-    .btnConectar{
-      margin-left: 135px;
-    }
-    .btnEsqueceuSenha{
-      margin-left: 116px;
-      font-size: 16px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    .btnLogar{
-      width: 220px;
-      margin-top: 25px;
-      margin-left: 90px;
-      font-size: 19px;
-    }
-  }
-  
-  @media screen and (min-width: 1024px){
-    .main-panel{
-      width: 450px;
-      margin-top: 40px;
-    }
-    .register-panel{
-        margin-top: 10px;
-    }
-    .txtIni{
-      margin-left: 90px;
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-    .txtCad{
-      font-size: 18px;
-    }
-    .txtEntradas{
-      width: 360px;
-   }
-    .txtTermos{
-      font-size: 16px;
-    }
-    .btnCadastrar{
-      width: 290px;
-      margin-left: 75px;
-      margin-bottom: 20px;
-    }
-    .sec-panel{
-      width: 450px;
-      min-height: 100px;
-    }
-    .txtConectar{
-      margin-top: 10px;
-      font-size: 22px;
-      margin-left: 130px;
-    }
-    .btnConectar{
-      width: 160px;
-      margin-left: 150px;
-    }
-    .btnEsqueceuSenha{
-      margin-left: 140px;
-    }
-    .btnLogar{
-      width: 240px;
-      margin-left: 100px;
-      margin-top: 50px;
-    }
-  } */
