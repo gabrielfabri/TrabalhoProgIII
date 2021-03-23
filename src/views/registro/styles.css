@@ -1,0 +1,82 @@
+.bg-photo {
+    background-color: #fafafa;
+}
+
+.containerInputs{
+    background-color: transparent;
+    width: 100%;
+    margin-left: 20px;
+}
+.divInput{
+    margin-top: 10px;
+}
+.txtNameInput{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.select{
+    width: 101% !important;
+    height: 30px !important;
+    border-color: #c6c6c6 !important;
+    padding-left: 5px !important;
+}
+
+.inputsRegister{
+    margin-top: 2px;
+    padding-left: 10px;
+    width: 96%;
+    height: 25px;
+    border-width: 2px;
+    border-color: #bfbfbf;
+    color: black;
+    background-color: #fff;
+}
+::placeholder{
+    color: #000;
+}
+.inputDate{
+    height: 27px !important;
+    font-size: 16px;
+    padding-left: 10px !important;
+}
+
+.txtTermos{
+    margin-top: 45px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+  
+.register-panel{
+    position: relative;
+    width:  80%;
+    min-height: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-color: #d9d9d98c;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #101010b3;
+}
+
+.ContainerInputsColumn{
+    width: 96%;
+    display: block;
+    column-count: 3;
+    column-gap: 40px;
+    column-span: 4;
+}
+
+.marginNone{
+    margin-top: 0px !important;
+}
+
+.ContainerButtonCad{
+    text-align: center;
+}
+
+/* .inputCenter{
+    text-align: center;
+} */
