@@ -4,17 +4,88 @@
     background-repeat: no-repeat;
     background-size: 100% 115%;
   } */
-  #myVideo {
+ /* #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: auto;
-  }
+  }*/
 
+  .register-panel{
+    position: relative;
+    width:  80%;
+    min-height: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-color: #d9d9d98c;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #101010b3;
+}
+
+.ContainerInputsColumn{
+  width: 96%;
+  display: block;
+  column-count: 2;
+  column-gap: 40px;
+  column-span: 4;
+}
+
+.containerInputs{
+  background-color: transparent;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.divInput{
+  margin-top: 10px;
+}
+
+.marginNone{
+  margin-top: 0px !important;
+}
+
+.txtNameInput{
+  margin-left: 20px;
+  color: #fff;
+  
+}
+
+.alinhaCaixaMsg{
+  position: absolute;
+  top: 76%;
+  left: 29%;
+}
+.inputsRegister{
+  margin-top: 2px;
+  padding-left: 10px;
+  width: 96%;
+  height: 25px;
+  border-width: 2px;
+  border-color: #bfbfbf;
+  color: black;
+  background-color: #fff;
+}
+.alinhaTexto{
+  text-align: right;
+}
+.center{
+  text-align: center;
+}
+
+.txtCaixaMsg{
+  text-align:end;
+
+}
+
+.display{
+  display:inline;
+}
   body{
-    background-color: #000;
+    background-color:  #fafafa;
     font-family: 'Roboto', sans-serif;  
   }
   input:hover{
@@ -64,7 +135,6 @@
       margin-top: 10px;
   }
   .txtCad{
-   /* margin-left: 10px;*/
     font-family: sans-serif;
     font-size: 18px;
     color: #fff;
@@ -86,13 +156,13 @@
   }
 
   .btnCadastrar{
-    width: 380px;
-    height: 30px;
-    margin-top: 15px;
+    width: 230px;
+    height: 35px;
+    margin-top: 60px;
     margin-bottom: 25px;
     background-color: #0b467d;
     font-family: sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: #e6e6e6;
     cursor: pointer;
   }

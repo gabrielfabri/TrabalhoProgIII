@@ -9,11 +9,11 @@
 
 </head>
     <body>
-      <video autoplay muted loop id="myVideo">
+       <!-- <video autoplay muted loop id="myVideo">
         <source src="../imagens/bg-video.mp4" type="video/mp4">
-    </video>
+    </video>-->
     <main>
-    <section class="main-panel register-panel">
+    <section class="register-panel">
     <header>
     <hgroup>
     <div class="txtIni txtRegister">
@@ -22,75 +22,95 @@
     </h1>
     </div>
         <div class="txtCad txtSlogan">
-        <h3>A melhor experiência em reserva de hotéis...
-        </h3>
+        <h3>Fale conosco...</h3>
         </div>
-        <hr>
         </hgroup>
         </header>
 
-    <header id="cabeçalho-artigo">
-        <hgroup>
-            <div class="txtCad txtSlogan">
-            <h4>Fale conosco</h4>
-            <h3>Formulário de Contato</h3>
-        </div>        
-    </hgroup>
-    </header>
+    <div class="display">
     <div class="txtCad">
-    <forms>
-    <fieldset id="usuário"><legend>Identificação de Usuário:</legend>
+    <div class="containerInputs">
+    <form action="">
         
-        <div>
-            <form method="POST" action="">
-              <div class="txtTermos2">
-                <span class="txtSlogan">Nome Completo:</span>
-                <input type="text" name="nome" placeholder="Digite seu nome completo" class="txtEntradas">
-              </div>
-              <div class="txtTermos2">
-                  <span class="txtSlogan">E-mail:</span>
-                  <input type="text" name="e-mail" placeholder="Digite seu e-mail" class="txtEntradas">
-              </div>
-              <div  class="txtTermos2">
-                  <span class="txtSlogan">Telefone:</span>
-                  <input type="int" name="Telefone"placeholder="Insira seu telefone" class="txtEntradas">
-              </div>
-    </fieldset>
+        <div class="ContainerInputsColumn">
+            <div id="usuário">
+                <form method="POST" action="">
+                    <div class="divInput marginNone">
+                        <span class="txtNameInput">Nome Completo</span><br>
+                        <div class="inputCenter">
+                          <input type="text" id="nome" placeholder="Nome completo" class="inputsRegister">
+                          <p></p>
+                        </div>
+                      </div>
+                    <div class="divInput">
+                        <span class="txtNameInput">E-mail</span><br>
+                        <input type="email"  id="email" placeholder="Digite seu e-mail" class="inputsRegister">
+                        <p></p>
+                    </div>
+                    <div class="divInput">
+                        <span class="txtNameInput">Telefone</span><br>
+                        <input type="int"  id="telefone" placeholder="Seu número" class="inputsRegister">
+                        <p></p>
+                    </div>
+            
     
-    <fieldset id="conheceu-site"><legend>Como conheceu o site:</legend>
-        <div class="txtTermos2">
-            <input type="radio" class="checkbox" name="escolha" id="opcao1">
-            <label for="opcao1" class="txtSlogan">Através de amigos</label>
-          </div>
-          <div class="txtTermos2">
-            <input type="radio" class="checkbox" name="escolha" id="opcao2">
-            <label for="opcao2" class="txtSlogan">Redes Sociais</label>
-          </div>
-          <div class="txtTermos2">
-            <input type="radio" class="checkbox" name="escolha" id="opcao3">
-            <label for="opcao3" class="txtSlogan">Buscas na Web</label>
-          </div>
-          <div class="txtTermos2">
-            <input type="radio" class="checkbox" name="escolha" id="opcao4">
-            <label for="opcao4" class="txtSlogan">Indicações de Agências de Viagens</label>
-          </div>
+                <legend class="txtNameInput">Como conheceu o site:</legend>
+                <div class="txtTermos2">
+                <input type="radio" class="checkbox" name="escolha" id="opcao1">
+                <label for="opcao1" class="txtSlogan">Através de amigos</label>
+                </div>
+                <div class="txtTermos2">
+                <input type="radio" class="checkbox" name="escolha" id="opcao2">
+                <label for="opcao2" class="txtSlogan">Redes Sociais</label>
+                </div>
+                <div class="txtTermos2">
+                <input type="radio" class="checkbox" name="escolha" id="opcao3">
+                <label for="opcao3" class="txtSlogan">Buscas na Web</label>
+                </div>
+                <div class="txtTermos2">
+                    <input type="radio" class="checkbox" name="escolha" id="opcao4">
+                    <label for="opcao4" class="txtSlogan">Indicações de Agências de Viagens</label>
+                </div>
 
-        <div  class="divInput">
-         <span class="txtTermos2"> <label for="opcao5" class="txtSlogan">Outros:</label></span>
-            <input type="text" name="escolha" id="opcao5" placeholder="Escreva aqui..." class="txtTermos2">
+                <div  class="divInput">
+                <span class="txtTermos2"> <label for="opcao5" class="txtSlogan">Outros:</label></span>
+                <input type="text" name="escolha" id="opcao5" placeholder="Escreva aqui..." class="txtNameInput">
+                    
+            </div>
+            </div> 
         </div>
-    </fieldset>
+    
+        
+    
+            <div class="center">
+            <p></p>
+            <fieldst id="informacao"><legend>Escreva sua mensagem:</legend>
+                <p></p>
+            </div>
+            
+            <div class="txtTermos2">
+            <span class="txtSlogan"></span>
+            <div class="alinhaCaixaMsg">
+            <textarea name="tMsg" id="cMsg" cols="60" rows="4" placeholder="Digite sua mensagem..." class="txtNameInput"></textarea>
+            <p></p>
+            </div>
+        </div>
+    
+        
+            </fieldst>
+        
+        
 
-    <fieldset id="informacao"><legend>Escreva sua mensagem:</legend>
-        <div class="txtTermos2">
-            <span class="txtSlogan">Mensagem:</span>
-            <textarea name="tMsg" id="cMsg" cols="32" rows="3" placeholder="Digite sua mensagem..." class="txtEntradas"></textarea>
-          </div>
-    </fieldset>
+    
 
-    <div>
-        <input type="submit" class="btnCadastrar2" value="Enviar" ></a>
+        <div class="center">
+            <p></p>
+            <p></p>
+        <input type="submit" class="btnCadastrar" value="Enviar" ></a>
+    </div>
       </div>
+    </div>
+</div>
 </forms>
         </div>
         </section>
