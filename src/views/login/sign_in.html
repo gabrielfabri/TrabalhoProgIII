@@ -7,52 +7,62 @@
         <link rel="stylesheet" href="./styles.css"/>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-photo">
-        <video autoplay muted loop id="myVideo">
-            <source src="../imagens/bg-video.mp4" type="video/mp4">
-        </video>
-        <main>
-            <section class="main-panel">
-                <header>
-                    <div class="txtIni">
-                        <h1>
-                            Reserva Certa
-                        </h1>
-                    </div>
-                    <div>
-                        <h3 class="txtCad txtSlogan">Cadastre-se para realizar sua reserva.</h3>
-                    </div>
-        
-                </header>
-                <div class="entradas-panel">
-                    <form method="POST" action="">
-                        <div>
-                            <input type="text" name="usuario" placeholder="Nome de usuário" class="txtEntradas">
+    <body>
+        <div class="container">
+            <div class="bg-photo"></div>
+            <main>
+                <section class="main-panel">
+                    <header>
+                        <div class="txtIni">
+                            <h1>
+                                Reserva Certa
+                            </h1>
                         </div>
                         <div>
-                            <input type="password" name="senha"  placeholder="Senha" class="txtEntradas">
+                            <h3 class="txtCad txtSlogan">Cadastre-se para realizar sua reserva.</h3>
+                        </div>        
+                    </header>
+                    <div class="entradas-panel">
+                        <div class="resultSubmitDiv">
+                            <span id="resSubmit"></span>
                         </div>
-                        <!-- <div>
-                            <a href="index.html"><input type="submit" class="btnLogar" value="Entrar" ></a>
-                        </div> -->
-                    </form>
-                    <div>
-                        <a href="index.html"><input type="submit" class="btnLogar" value="Entrar" ></a>
+                        <form method="POST" action="">
+                            <div>
+                                <div class="textInputLogin">
+                                    <span class="textInput">Email</span>
+                                </div>
+                                <input type="text" id="email" placeholder="Email" class="txtEntradas">
+                            </div>
+                            <div>
+                                <div class="textInputLogin">
+                                    <span class="textInput">Senha</span>
+                                </div>
+                                <input type="password" id="password"  placeholder="Senha" class="txtEntradas">
+                            </div>
+                            <!-- <div>
+                                <a href="index.html"><input type="submit" class="btnLogar" value="Entrar" ></a>
+                            </div> -->
+                        </form>
+                        <div>
+                            <a href=""><input type="submit" class="btnEsqueceuSenha" value="Esqueceu sua senha?" ></a>
+                        </div>
+                        <div>
+                            <input type="submit" class="btnLogar" value="Entrar" id="btnSubmit">
+                        </div>
+                        
+                        <div>
+                            <i class="far fa-comments" id="iconComments"></i>
+                            <a href="../fale-conosco/faleConosco.html"><input type="submit" class="btnEsqueceuSenha" value="Fale conosco" ></a>
+                        </div>
                     </div>
-                    <div>
-                        <a href=""><input type="submit" class="btnEsqueceuSenha" value="Esqueceu sua senha?" ></a>
-                    </div>
-                    <div>
-                        <i class="far fa-comments" id="iconComments"></i>
-                        <a href="faleConosco.html"><input type="submit" class="btnEsqueceuSenha" value="Fale conosco" ></a>
-                    </div>
-                </div>
-        
-            </section>
-            <footer class="sec-panel">
-                <h1 class="txtConectar">Não tem uma conta?</h1>
-                <a href="register.html"><input type="submit" class="btnConectar" value="Cadastre-se" ></a>
-            </footer>        
-        </main>
+            
+                </section>
+                <footer class="sec-panel">
+                    <h1 class="txtConectar">Não tem uma conta?</h1>
+                    <a href="../registro/register.html"><input type="submit" class="btnConectar" value="Cadastre-se"></a>
+                </footer>        
+            </main>
+        </div>
     </body>
+    <script src="./valida.js"></script>
 </html>

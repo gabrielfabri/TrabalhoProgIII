@@ -18,40 +18,43 @@
         </div>
     </header>
     <section>
-        <div class="filterPanel">
-            <div class="titleFilter">
+        <div class="filterPanel" id="filterPanel">
+            <div class="resultReserva">
+                <span id="resultReserva"></span>
+            </div>
+            <!-- <div class="titleFilter">
                 <span>Para onde vai?</span>
             </div>
             <div class="filter">
                 <span class="textInputFilter">Destino</span>
-                <input type="text" name="" class="inputFilter" placeholder="Digite o nome do destino">
+                <input type="text" id="" class="inputFilter" placeholder="Digite o nome do destino">
+            </div> -->
+            <div class="filter">
+                <span class="textInputFilter">Entrada</span>
+                <input type="date" id="dateStart" class="inputFilter">
             </div>
             <div class="filter">
-                <span class="textInputFilter">Check-in</span>
-                <input type="date" name="" class="inputFilter">
-            </div>
-            <div class="filter">
-                <span class="textInputFilter">Checkout</span>
-                <input type="date" name="" class="inputFilter">
+                <span class="textInputFilter">Saída</span>
+                <input type="date" id="dateEnd" class="inputFilter">
             </div>
             <div class="filter">
                 <span class="textInputFilter">Adultos</span>
-                <input type="number" name="" class="inputFilter" placeholder="Quantidade de Adultos">
+                <input type="number" id="adultos" class="inputFilter" placeholder="Quantidade de Adultos">
             </div>
             <div class="filter">
                 <span class="textInputFilter">Crianças até 3 anos</span>
-                <input type="number" name="" class="inputFilter" placeholder="Quantidade de Crianças até 3 anos">
+                <input type="number" id="crianças3" class="inputFilter" placeholder="Quantidade de Crianças até 3 anos">
             </div>
             <div class="filter">
                 <span class="textInputFilter">Crianças de 4 à 12 anos</span>
-                <input type="number" name="" class="inputFilter" placeholder="Quantidade de Crianças de 4 à 12 anos">
+                <input type="number" id="crianças12" class="inputFilter" placeholder="Quantidade de Crianças de 4 à 12 anos">
             </div>
-            <div class="buttonDiv">
-                <button>
+            <!-- <div class="buttonDiv">
+                <button id="" type="submit">
                     <i class="fas fa-search"></i>
                     <span>Buscar</span>
                 </button>
-            </div>
+            </div> -->
         </div>
        
         <div class="listPanel">
@@ -59,7 +62,7 @@
                 <tr class="tableRow">
                     <td class="containerList">
                         <div class="containerImage">
-                            <img src="../imagens/hotel-image-static.jpg" alt="">
+                            <img src="../../../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
                             <div>
@@ -71,11 +74,14 @@
                             </div>
                             <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
                             <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
+                            <div class="containerButton" >
+                                <button class="buttonReservar" id="btnReservar">Reservar</button>
+                            </div>                            
                         </div>
                     </td>
                     <td class="containerList">
                         <div class="containerImage">
-                            <img src="../imagens/hotel-image-static.jpg" alt="">
+                            <img src="../../../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
                             <div>
@@ -87,11 +93,14 @@
                             </div>
                             <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
                             <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
+                            <div class="containerButton">
+                                <button class="buttonReservar" type="submit" id="btnReservar">Reservar</button>
+                            </div>
                         </div>
                     </td>
                     <td class="containerList">
                         <div class="containerImage">
-                            <img src="../imagens/hotel-image-static.jpg" alt="">
+                            <img src="../../../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
                             <div>
@@ -103,13 +112,16 @@
                             </div>
                             <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
                             <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
+                            <div class="containerButton">
+                                <button class="buttonReservar" type="submit" id="btnReservar">Reservar</button>
+                            </div>
                         </div>
                     </td>
                 </tr>
                 <tr  class="tableRow">
                     <td class="containerList">
                         <div class="containerImage">
-                            <img src="../imagens/hotel-image-static.jpg" alt="">
+                            <img src="../../../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
                             <div>
@@ -121,11 +133,14 @@
                             </div>
                             <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
                             <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
+                            <div class="containerButton">
+                                <button class="buttonReservar" type="submit" id="btnReservar">Reservar</button>
+                            </div>
                         </div>
                     </td>
                     <td class="containerList">
                         <div class="containerImage">
-                            <img src="../imagens/hotel-image-static.jpg" alt="">
+                            <img src="../../../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
                             <div>
@@ -137,11 +152,14 @@
                             </div>
                             <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
                             <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
+                            <div class="containerButton">
+                                <button class="buttonReservar" type="submit" id="btnReservar">Reservar</button>
+                            </div>
                         </div>
                     </td>
                     <td class="containerList">
                         <div class="containerImage">
-                            <img src="../imagens/hotel-image-static.jpg" alt="">
+                            <img src="../../../imagens/hotel-image-static.jpg" alt="">
                         </div>
                         <div class="descriptionHotel">
                             <div>
@@ -153,6 +171,9 @@
                             </div>
                             <span class="textInfoHotel" >Apartamento Inteiro ao lado do metrô Republica.</span>
                             <span class="textInfoHotel valueInfoHotel" >R$100/noite</span>
+                            <div class="containerButton">
+                                <button class="buttonReservar" type="submit" id="btnReservar">Reservar</button>
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -163,4 +184,5 @@
         
     </section>
 </body>
+<script src="./valida.js"></script>
 </html>

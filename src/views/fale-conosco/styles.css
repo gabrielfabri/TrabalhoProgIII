@@ -1,9 +1,9 @@
-  /*.bg-photo{
+  .bg-photo{
     background-color: #c9c9c9;
-    background-image: url('../imagens/pexels-pixabay-277572.jpg');
+    background-image: url('../../../imagens/hotel.jpg');
     background-repeat: no-repeat;
     background-size: 100% 115%;
-  } */
+  }
  /* #myVideo {
     position: fixed;
     right: 0;
@@ -13,6 +13,13 @@
     z-index: auto;
   }*/
 
+  .resultSubmitDiv {
+    background-color: #fff;
+    width: 20%;
+    margin-top: 3px;
+    text-align: center;
+  }
+  
   .register-panel{
     position: relative;
     width:  80%;
@@ -51,6 +58,12 @@
 .txtNameInput{
   margin-left: 20px;
   color: #fff;
+  
+}
+
+.txtNameInputInput{
+  margin-left: 20px;
+  color: #000;
   
 }
 
@@ -141,9 +154,18 @@
   }
   .txtSlogan{
     text-align: center;
+    align-items: center;
     margin-bottom: 35px;
     color: #fff;
   }
+
+  .divTxtSlogan{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .txtEntradas{
     margin-top: 2px;
     padding-left: 10px;

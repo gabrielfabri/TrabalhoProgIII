@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva Certa - Cadastro</title>
 
-    <link rel="stylesheet" href="../login/styles.css">
+    <!-- <link rel="stylesheet" href="../login/styles.css"> -->
     <link rel="stylesheet" href="./styles.css"/>
-    <script src="./valida.js"></script>
+    
   </head>
   <body class="bg-photo">
-    <main>
+    <div class="cardContainer">
       <section class="register-panel">
         <header>
-          <div class="txtIni txtRegister">
+          <div class="txtIni">
             <h1>
                 Reserva Certa
             </h1>
           </div>
-          <div class="txtCad txtSlogan">
+          <div class="txtSlogan">
             <h3>Cadastre-se para realizar sua reserva.</h3>
           </div>
-          <div id="res" style="color:#e25656"></div>
+          <div class="resultCad">
+            <div id="res" style="color:red"></div>
+          </div>
+          
         </header>
 
         <div class="containerInputs">
@@ -80,11 +83,17 @@
               </div>
               <div class="divInput">
                   <span class="txtNameInput">Senha</span><br>
-                  <input type="password" id="senha" class="inputsRegister" placeholder="Senha">
+                  <input type="password" id="password" class="inputsRegister" placeholder="Senha">
+                  <div class="divPassword">
+                    <span id="resPassword"></span>
+                  </div>
               </div>
               <div class="divInput">
                   <span class="txtNameInput">Confirmação de Senha</span><br>
-                  <input type="password" id="confSenha" class="inputsRegister" placeholder="Confirmação de Senha">
+                  <input type="password" id="passwordConf" class="inputsRegister" placeholder="Confirmação de Senha">
+              </div>
+              <div class="divPassword">
+                <span id="resPasswordConf"></span>
               </div>
             </div>
             <div class="txtTermos">
@@ -96,13 +105,14 @@
               <button type="button" class="btnCadastrar" onclick="validacao()">Cadastre-se</button>
             </div>
           </form>
+          <footer class="sec-panel">
+            <h1 class="txtConectar">Já tem uma conta?</h1>
+            <a href="../login/sign_in.html"><input type="submit" class="btnConectar" value="Conecte-se" ></a>
+         </footer>
         </div>
-
+        
       </section>
-      <footer class="sec-panel">
-         <h1 class="txtConectar">Já tem uma conta?</h1>
-         <a href="sign_in.html"><input type="submit" class="btnConectar" value="Conecte-se" ></a>
-      </footer>
-    </main>
+    </div>
   </body>
+  <script src="./valida.js"></script>
 </html>

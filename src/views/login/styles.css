@@ -1,52 +1,57 @@
-  /* .bg-photo{
-    background-color: #c9c9c9;
-    background-image: url('../imagens/pexels-pixabay-277572.jpg');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }  
+  
+  .bg-photo{
+    flex: 3;
+    background-color: #e6e6e642;
+    background-image: url('../../../imagens/hotel.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 115%;
-  } */
+    background-size: 100% 100%;
+    background-size: cover;
+  }
 
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: auto;
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e642;
+    height: 90%;
+    margin-top: 2.5%;
   }
 
   body{
-    background-color: #000;
+    display: flex;
     font-family: 'Roboto', sans-serif;  
   }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #e6e6e61a;
+  }
+
   input:hover{
     border: 2px solid #5f5f5f;
   }
 
   .main-panel{
-    position: relative;
-    width:  400px;
+    width:  380px;
     min-height: 425px;
     margin: 0 auto;
-    margin-top: 30px;
-    border-color: #d9d9d98c;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 30px;
-    background-color: #101010b3;
+    margin-top: 45px;
+    background-color: transparent;
   }
 
   .sec-panel{
-    position: relative;
     text-align: center;
-    width: 400px;
-    min-height: 110px;
+    width: 380px;
+    min-height: 150px;
     margin: 0 auto;
     margin-top: 20px;
-    border-color: #d9d9d98c;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    background-color: #101010b3;
   }
 
   .entradas-panel{
@@ -54,12 +59,17 @@
       text-align: center;
   }
 
+  .textInputLogin{
+    text-align: left;
+    margin-left: 20px;
+  }
+
   .txtIni{
     text-align: center;
     font-family: 'Heebo', sans-serif;
     font-size: 25px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
   }
   .txtRegister{
       margin-top: 10px;
@@ -68,28 +78,25 @@
     margin-left: 10px;
     font-family: sans-serif;
     font-size: 18px;
+    margin-bottom: 20px;
   }
   .txtSlogan{
     text-align: center;
     margin-bottom: 35px;
-    color: #fff;
+    color: #000;
   }
+  
   .txtEntradas{
-    margin-top: 2px;
-    padding-left: 10px;
-    width: 300px;
-    height: 25px;
-    border-width: 2px;
-    border-color: #bfbfbf;
-    color: black;
-    background-color: #fff;
-  }
-
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
   .btnCadastrar{
     width: 380px;
     height: 30px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 20px;
     background-color: #0b467d;
     font-family: sans-serif;
     font-size: 22px;
@@ -97,6 +104,11 @@
     border-width: 0px;
     cursor: pointer;
   }
+
+  .resultSubmitDiv{
+    margin-bottom: 10px;
+  }
+
   .btnConectar{
     background-color: #0b467d;
     font-family: sans-serif;
@@ -108,10 +120,10 @@
     padding: 10px;
   }
   .txtConectar{
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 22px;
     font-family: sans-serif;
-    color: #fff;
+    color: #000;
   }
 
   .btnEsqueceuSenha{
@@ -121,21 +133,22 @@
     color: #000;
     border-width: 0px;
     cursor: pointer;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     padding: 2px 3px 2px;
-    color: #fff;
+    color: #000;
   }
   .btnLogar{
     width: 250px;
     height: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #0b467d;
     font-family: sans-serif;
     font-size: 22px;
     color: #e6e6e6;
     border-width: 0px;
     cursor: pointer;
+    margin-bottom: 5px;
   }
   .txtLogin{
     margin-bottom: 40px;
@@ -194,5 +207,5 @@
   }
 
   #iconComments{
-    color: #fff;
+    color: #000;
   }

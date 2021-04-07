@@ -11,27 +11,27 @@ function validacao(){
     var estado = document.getElementById('estado');
     var cep = document.getElementById('cep');
     var email = document.getElementById('email');
-    // var senha = document.getElementById('senha');
+    var password = document.getElementById('password');
     // var confSenha = document.getElementById('confSenha');
     // var concordo = document.getElementById('concordo');
     var res = document.getElementById('res');
 
     /// ------ VALIDAÇÃO DO NOME 
     
-    // if(ValidaNome(nome) === false){
-    //     res.innerText = "Nome inválido!";
-    //     nome.focus();
-    //     return;
-    // }
+    if(ValidaNome(nome) === false){
+        res.innerText = "Nome inválido!";
+        nome.focus();
+        return;
+    }
 
 
     // ------ VALIDAÇÃO DO CPF
 
-    // if(cpf.value === '' || TestaCPF(cpf.value) === false){
-    //     res.innerText = "CPF inválido!";
-    //     cpf.focus();
-    //     return;
-    // }
+    if(cpf.value === '' || TestaCPF(cpf.value) === false){
+        res.innerText = "CPF inválido!";
+        cpf.focus();
+        return;
+    }
 
 
     // ------ VALIDAÇÃO DO Data de nascimento
@@ -44,68 +44,72 @@ function validacao(){
 
     // ------ VALIDAÇÃO DO SEXO
 
-    // if(sexo.value === 'null'){
-    //     res.innerText = "Sexo inválido!";
-    //     sexo.focus();
-    //     return;
-    // }
+    if(sexo.value === 'null'){
+        res.innerText = "Sexo inválido!";
+        sexo.focus();
+        return;
+    }
 
     // ------ VALIDAÇÃO DO ESTADO CIVIL
 
-    // if(estadoCivil.value === 'null' || estadoCivil.value === ''){
-    //     res.innerText = "Estado Civil inválido!";
-    //     estadoCivil.focus();
-    //     return;
-    // }
+    if(estadoCivil.value === 'null' || estadoCivil.value === ''){
+        res.innerText = "Estado Civil inválido!";
+        estadoCivil.focus();
+        return;
+    }
 
     //   ------ VALIDAÇÃO DA CIDADE
 
-    // if(cidade.value === ''){
-    //     res.innerText = "Cidade inválida!";
-    //     cidade.focus();
-    //     return;
-    // }
+    if(cidade.value === ''){
+        res.innerText = "Cidade inválida!";
+        cidade.focus();
+        return;
+    }
 
 
     //   ------ VALIDAÇÃO DO ESTADO
 
-    // if(estado.value === '' || estado.value.length > 2){
-    //     res.innerText = "Estado inválido!";
-    //     estado.focus();
-    //     return;
-    // }
+    if(estado.value === '' || estado.value.length > 2){
+        res.innerText = "Estado inválido!";
+        estado.focus();
+        return;
+    }
 
     //   ------ VALIDAÇÃO DO CEP
 
-    // if(cep.value === ''){
-    //     res.innerText = "CEP inválido!";
-    //     cep.focus();
-    //     return;
-    // } else {
-    //     ValidaCEP(cep.value);
-    //     if(estado.value !== cepResult){
-    //         res.innerText = "CEP e Estado não conferem!";
-    //         cep.focus();
-    //         estado.focus();
-    //         return;
-    //     }
-    // }
+    if(cep.value === ''){
+        res.innerText = "CEP inválido!";
+        cep.focus();
+        return;
+    } else {
+        ValidaCEP(cep.value);
+        if(estado.value !== cepResult){
+            res.innerText = "CEP e Estado não conferem!";
+            cep.focus();
+            estado.focus();
+            return;
+        }
+    }
 
 
     //   ------ VALIDAÇÃO DO EMAIL
 
-    // if(ValidaEmail(email.value) === false){
-    //     res.innerText = "Email inválido";
-    //     email.focus();
-    //     return;
-    // }
+    if(ValidaEmail(email.value) === false){
+        res.innerText = "Email inválido!";
+        email.focus();
+        return;
+    }
 
+    //   ------ VALIDAÇÃO DA SENHA
 
-
-
-    console.log("ESSE PASSOU");
+    if(password.value.length === 0){
+        res.innerText = "Senha inválida!";
+        email.focus();
+        return;
+    }
     
 }
+
 
 function ValidaEmail(email){
     let emailSplit = email.split("");
@@ -178,6 +182,7 @@ function TestaCPF(strCPF) {
 
     if ((Resto == 10) || (Resto == 11))  Resto = 0;
     if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+    console.log("teste");
     return true;
 }
 
@@ -192,3 +197,55 @@ function ValidaCEP(cep){
     script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=cep_callback';
     document.body.appendChild(script);
 }
+
+
+
+let password = document.getElementById('password');
+let resPassword = document.getElementById('resPassword');
+let passwordConf = document.getElementById('passwordConf');
+let resPasswordConf = document.getElementById('resPasswordConf');
+
+password.addEventListener('keyup', (e) => {
+
+    function getMedium(){
+      return regex.test(password.value);
+    }
+  
+    function getStrong(){
+      return regexStrong.test(password.value);
+    }
+  
+    e.preventDefault();
+  
+    let regex = /^(?=.*[@!#$%^&*()/\\])[@!#$%^&*()/\\a-zA-Z0-9]{8,20}$/;
+    let regexStrong = /(?=.*([}{,.^?#@~=+\-_\/*\-+.\|]).{2,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}/;
+  
+    if(password.value.length < 6 || password.value.length > 12){
+        resPassword.innerText = "Senha inválida!";
+        resPassword.style.color = "red";
+    }else{
+      resPassword.innerText = "";
+      if(password.value.length == 6 || regex.test(password.value) === false){
+        resPassword.innerText = "Senha Fraca!";
+        resPassword.style.color = "red";
+      }else if(password.value.length > 6 && getMedium() === true && getStrong() === false){
+        resPassword.innerText = "Senha Média!";
+        resPassword.style.color = "green";
+      } else if(password.value.length > 6 && getStrong() === true){
+        resPassword.innerText = "Senha Forte!";
+        resPassword.style.color = "blue";
+      }
+    }
+});
+
+passwordConf.addEventListener('keyup', (e) => {
+    e.preventDefault();
+  
+    if(passwordConf.value === '' || passwordConf.value !== password.value){
+        resPasswordConf.innerText = "Senhas Diferentes!";
+        resPasswordConf.style.color = "red";
+    }else{
+        resPasswordConf.innerText = "";
+    }
+  
+  })
